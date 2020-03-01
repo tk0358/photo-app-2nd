@@ -1,6 +1,19 @@
 @import 'bootstrap/dist/css/bootstrap';
 
 /* main_color #ff6b81 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Lato;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #777;
+}
 
 .alert { margin-top: 10px;}
 
@@ -25,4 +38,8 @@
   font-stretch: expanded;
   letter-spacing: 1px;
   text-align: center;
+}
+
+.plan ul {
+  list-style-position: inside;
 }
