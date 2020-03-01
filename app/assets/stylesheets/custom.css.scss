@@ -1,1 +1,13 @@
-@import 'bootstrap/dist/css/bootstrap'
+@import 'bootstrap/dist/css/bootstrap';
+
+.alert { margin-top: 10px;}
+
+.user-name {
+  margin-top: 5px;
+  margin-right: 10px;
+}
+
+.user-name a {
+  text-decoration: none;
+  color: black;
+}
