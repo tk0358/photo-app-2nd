@@ -39,10 +39,9 @@ $(document).ready(function() {
   };
   
   show_error = function (message) {
-    if($("#flash-messages").size() < 1) {
-      $('div.container.main div:first').prepend("<div id='flash-messages'></div>")
-    }
-    $("#flash-messages").html('div class="alert alert-warning"><a class="close" data-dismiss="alert">x</a><div id="flash_alert">' + message + '</div></div>');
+    $("#flash-messages").html('<div class="alert alert-danger alert-dismissible fade show" role="alert">'
+     + message +
+    '</div>');
     $('.alert').delay(5000).fadeOut(3000);
     return false;
   };
