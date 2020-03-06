@@ -26,6 +26,7 @@ gem "font-awesome-rails"
 gem 'stripe'
 gem 'carrierwave'
 gem 'mini_magick'
+gem 'fog-aws', '~> 0.7.6'
 # gem 'fog'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'

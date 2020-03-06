@@ -7,20 +7,18 @@
     <tr>
       <th scope="col">Name</th>
       <th scope="col">Picture</th>
-      <th scope="col">User</th>
-      <th scope="col" colspan="3"></th>
+      <th scope="col">Action</th>
     </tr>
   </thead>
 
   <tbody>
     <% @images.each do |image| %>
       <tr>
-        <td><%= image.name %></td>
-        <td><%= image.picture %></td>
-        <td><%= image.user_id %></td>
-        <td><%= link_to 'Show', image %></td>
-        <td><%= link_to 'Edit', edit_image_path(image) %></td>
-        <td><%= link_to 'Destroy', image, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to image.name, image_path(image) %></td>
+        <td><%= image_tag image.picture.url, size: "100x100" %></td>
+        <td><%= link_to 'Show', image, class: 'btn btn-outline-secondary btn-sm' %>
+        <%= link_to 'Edit', edit_image_path(image), class: 'btn btn-outline-secondary btn-sm' %>
+        <%= link_to 'Destroy', image, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger btn-sm' %></td>
       </tr>
     <% end %>
   </tbody>
